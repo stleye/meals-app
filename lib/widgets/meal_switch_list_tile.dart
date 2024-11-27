@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MealSwitchListTile extends StatefulWidget {
-  MealSwitchListTile({
+  const MealSwitchListTile({
     super.key,
     required this.title,
     required this.subtitle,
@@ -9,8 +9,8 @@ class MealSwitchListTile extends StatefulWidget {
     required this.isChecked,
   });
 
-  void Function(bool) onToggleValue;
-  bool isChecked;
+  final void Function(bool) onToggleValue;
+  final bool isChecked;
   final String title;
   final String subtitle;
 
